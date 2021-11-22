@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- CSS -->
+        <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+        {{!-- <link href="stylesheets/bootstrap-icons.css" rel="stylesheet"> --}}
+        <link href="stylesheets/style.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="stylesheet/font-awesome.min.css">
+{{!-- 
+took reference from https://startbootstrap.com/themes for bootstrap 
+used document for bootstrap grid system from
+https://getbootstrap.com/docs/4.3/layout/grid/ --}}
+
+    </head>
+    <body>
+        <main>
+            <section class="hero" id="hero">
+                <div class="heroText">
+                    <h1 class="text-white mt-5 mb-lg-4">
+                       Parth Shah's Portfolio
+                    </h1>
+                    <p class="text-secondary-white-color">
+                        Here you will see my skills.
+                    </p>
+                </div>
+{{!-- using video at homepage --}}
+
+                <div class="videoWrapper">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="videos/pixar.jpg">
+                        <source src="videos/PIXAR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="overlay"></div>
+            </section>
+{{!-- NAVBAR --}}
+            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">                    
+                        <strong>Parth Shah</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+<!--About page-->
+            <section class="section-padding pb-0" id="about">
+                <div class="container mb-5 pb-lg-5">
+                    <div class="row">
+                        <div class="col-0">
+                            <h2 class="mb-3">About Me</h2>
+                        </div>
+                        <div class="col-lg-6 col-12 mt-3 mb-lg-5">
+                            <p class="me-4">Hi, My name is Parth Shah, I have completed my B.E IT from Gujarat Technological Institute, I have knowledge for HTML, Bootstrap, CSS, JavaScript. Designing is one of my hobbies so to fullfill it I have also done the certified course for 3d animation and Visual Effects.
+                              <br>You can see my skills and art pieces under portfolio section.</p>
+                        </div>
+                          <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                            <p data-aos="fade-up" data-aos-delay="500">Also, I do have knowledge of computer languages such as JAVA
+                              , C++, C#, Python.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{{!-- portfolio --}}
+            <section class="section-padding" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center">Portfolio</h2>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="portfolio-thumb mb-5">
+
+                                <a href="images/portfolio/portfolio/Doctor_strange.jpg" class="image-popup">
+                                    <img src="images/portfolio/Doctor_strange.jpg" class="img-fluid portfolio-image" alt="">
+                                </a>
+                                <div class="portfolio-info">                     
+                                    <h4 class="portfolio-title mb-0">Doctor Strange</h4>
+                                    <p class="text-danger">Sketch</p>
+                                </div>
+                            </div> 
+                            <div class="portfolio-thumb">
+                                <a href="images/portfolio/power_ranger.jpg" class="image-popup">
+                                    <img src="images/portfolio/power_ranger.jpg" class="img-fluid portfolio-image" alt="">
+                                </a>
+                                <div class="portfolio-info">                     
+                                    <h4 class="portfolio-title mb-0">Power Ranger</h4>
+                                    <p class="text-success">Sketch</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="portfolio-thumb mt-5 mt-lg-0 mb-5">
+                                <a href="images/portfolio/eye.jpg" class="image-popup">
+                                    <img src="images/portfolio/eye.jpg" class="img-fluid portfolio-image" alt="">
+                                </a>
+                                <div class="portfolio-info">                     
+                                    <h4 class="portfolio-title mb-0">Eye</h4>
+                                    <p class="text-warning">Sketch</p>
+                                </div>
+                            </div> 
+                            <div class="portfolio-thumb">                         
+                                <a href="images/portfolio/x-wing.jpg" class="image-popup">
+                                    <img src="images/portfolio/x-wing.jpg" class="img-fluid portfolio-image" alt="">
+                                </a>
+                                <div class="portfolio-info">                     
+                                    <h4 class="portfolio-title mb-0">X-wing</h4>
+                                    <p class="text-info">3D Model</p>
+                                </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+{{!-- Contact --}}
+
+            <section class=" contact section-padding" id="contact">
+                <div class="container">
+                    <div class="row">                       
+                        <div class="col-lg-7 col-12 mx-auto">
+                           <h1 class="mb-4 text-center">Contact Me</h2>
+                            <form action="#" method="post" class="contact-form" role="form">
+                                <div class="row">                          
+                                    <div class="col-lg-6 col-6">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name">
+                                    </div>
+                                    <div class="col-lg-6 col-6">
+                                        <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <label for="message" class="form-label">How can I help you?</label>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tell us about the project"></textarea>                                 
+                                    </div>
+                                <div class="col-lg-5 col-12 mx-auto mt-5">
+                                    <button type="submit" class="form-control">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            You can contact me via email
+                        </h5>
+                        <a href="mailto:pshah1718@conestogac.on.ca" class="custom-link">
+                            pshah1718@conestogac.on.ca
+                        </a>
+                         <div class="col-6">
+                        <br><a href="https://www.google.ca/maps/place/Waterloo,+ON/@43.4822754,-80.5817388,13z/data=!3m1!4b1!4m5!3m4!1s0x882bf1565ffe672b:0x5037b28c7231d90!8m2!3d43.4642578!4d-80.5204096?hl=en&authuser=0" class="custom-link">
+                        Waterloo, Ontario, CA.
+                    </div>                   
+
+                    <nav class="col-lg-8 align-self-center mb-5">
+                       <div class="col-lg-3 col-5 ms-auto">
+                        <ul class="social-icon">                       
+                           <li>
+                             <a href="www.facebook.com">
+                               <img class="social-icon " src="/images/icons/facebook.png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="www.github.com">
+                               <img class="social-icon" src="/images/icons/github.png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="www.instagram.com">
+                               <img class="social-icon" src="/images/icons/instagram.png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="www.twitter.com">
+                               <img class="social-icon" src="/images/icons/twitter.png">
+                             </a>
+                           </li>
+                        </ul>
+                      </div>
+                    </nav>
+
+                    {{!-- <div class="col-lg-3 col-5 ms-auto">
+                        <ul class="social-icon">                       
+                           <li>
+                             <a href="#">
+                               <img class="social-icon" src="/images/icons/facebook (2).png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <img class="social-icon" src="/images/icons/github.png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <img class="social-icon" src="/images/icons/instagram.png">
+                             </a>
+                           </li>
+                           <li>
+                             <a href="#">
+                               <img class="social-icon" src="/images/icons/twitter.png">
+                             </a>
+                           </li>
+                        </ul>
+                    </div>
+                </div> --}}
+            </section>
+        </footer>
+        
+        <!-- JAVASCRIPT FILES -->
+        {{!-- <script src="javascripts/aos.js"></script> --}}
+        <script src="javascripts/scrollspy.min.js"></script>
+        <script src="javascripts/custom.js"></script>
+    </body>
+</html>
